@@ -34,14 +34,11 @@ output
 
 #Code goes here:
 
-x=input().lower()
-y=input().lower()
- 
-sumx=0
-sumy=0
- 
-for a,b in zip(x,y):
-	sumx+=int(ord(a))
-	sumy+=int(ord(b))
- 
-print((sumx>sumy)*"1"+(sumx<sumy)*"-1" or "0")
+s1 = input().lower()
+s2 = input().lower()
+if (s1 < s2):
+	print(-1)
+elif (s1 > s2):
+	print(1)
+else:
+	print(0)
